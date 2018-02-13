@@ -13,10 +13,10 @@ yarn run webpack:prod
 # tag image
 TAG=0.1.$CIRCLE_BUILD_NUM
 # build docker image
-docker build -t registry.agenda.ch/fazio/$servicename:$TAG  .
+docker build -t registry.agenda.ch/fazio/$serviceName:$TAG  .
 # login to docker hub
 docker login registry.agenda.ch -u $USER_DOCKER -p $PASS_DOCKER
 # push docker image
-docker push registry.agenda.ch/fazio/$servicename:$TAG
+docker push registry.agenda.ch/fazio/$serviceName:$TAG
 
 cd $rootDirectory
