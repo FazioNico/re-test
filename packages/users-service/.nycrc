@@ -1,0 +1,18 @@
+{
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "html",
+      "text-summary",
+      "lcov"
+    ],
+    "per-file": true,
+    "lines": 15,
+    "statements": 15,
+    "functions": 15,
+    "branches": 15,
+    "cache": true,
+    "sourceMap": false,
+    "instrument": false
+}
