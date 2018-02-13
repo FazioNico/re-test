@@ -1,11 +1,19 @@
 version: 2
 jobs:
+  # build:
+  #   docker:
+  #     - image: docker:18.01.0-ce-git
+  #   working_directory: ~/repo
+  #   steps:
+  #     - checkout
+  #     - setup_remote_docker:
+  #         docker_layer_caching: true
+  #     - run: sh install.sh
+
   build:
     docker:
-      - image: docker:18.01.0-ce-git
+      - image: circleci/node:7.10
     working_directory: ~/repo
     steps:
       - checkout
-      - setup_remote_docker:
-          docker_layer_caching: true 
       - run: sh install.sh
